@@ -1,0 +1,94 @@
+/*   GRID   */
+
+body {
+  background-image: url("../images/backgr_image4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  background-position: 50% 50%;
+
+  font-family: "balsamiq_sansregular", "Comic Sans MS", Helvetica, sans-serif;
+  margin: 8px;
+  /* display: grid;
+  grid-template-rows: 10rem 10rem auto;
+  grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
+  grid-template-areas:
+    "header header header header header header header"
+    "header header header header header header header"
+    "main main main main main main main"; */
+}
+
+/* Debugger */
+
+* {
+  border: 1px solid black;
+}
+
+/*  Header  */
+
+header {
+  /* height: 24rem;
+  width: auto;
+  margin: 2rem 4rem; */
+  background: #dbdbdb;
+  height: 20rem;
+  margin: 8px 2rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  opacity: 0.9;
+}
+
+.header_img_container {
+  background-image: url("../images/soccer_image1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  background-position: 50% 50%;
+  grid-area: 1 / 2 / span 3 / span 2;
+  z-index: 10;
+}
+
+.logo {
+  grid-area: 3 / 7 / span 1 / span 1;
+  width: auto;
+  max-height: 100%;
+  justify-self: end;
+  z-index: 30;
+}
+
+header h1 {
+  grid-area: 3 / 2 / span 1 / span 5;
+  background-color: grey;
+  text-align: center;
+  z-index: 20;
+  border: 1px solid black;
+}
+
+header h2 {
+  grid-area: 1 / 1 / span 1 / span 1;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.wrap {
+
+}
+
+nav {
+  grid-area: 1 / 7 / span 1 / span 1;
+}
+
+
+/*  Main (not wrapped in <main>)  */
+
+main {
+  grid-area: main / 1 / span 1 / span 5;
+}
+
+/*Disable other images*/
+#img2,
+#img3 {
+  display: none;
+}

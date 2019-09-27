@@ -1,0 +1,61 @@
+body {
+  font-family: "balsamiq_sansregular", "Comic Sans MS", Helvetica, sans-serif;
+  margin: 20px;
+  max-width: 700px;
+}
+
+img {
+  max-width: 100% ;
+  height: auto;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+
+/*  Header  */
+
+#logo {
+  margin-bottom: 20px;
+}
+
+.page_title {
+  display: none;
+}
+
+
+/*  Navigation  */
+
+nav p {
+  display: inline;
+  margin: 20px 80px 20px 0px;
+}
+
+.current_nav {
+  font-weight: bold;
+}
+
+
+/*  Main (not wrapped in <main>)  */
+
+.img_page {
+  margin-top: 40px;
+}
+
+.text_main p {
+  margin-top: 0px;
+}
+
+
+/*  Individual pages  */
+
+#text_about h2,
+#text_index h4 {
+  margin-bottom: 0px;
+}
+
+#text_contact {
+  margin-top: 40px;
+}

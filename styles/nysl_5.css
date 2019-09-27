@@ -1,0 +1,86 @@
+/*   FLEXBOX   */
+
+body {
+  background-image: url("../images/backgr_image2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  background-position: 50% 50%;
+
+  font-family: "balsamiq_sansregular", "Comic Sans MS", Helvetica, sans-serif;
+  margin: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Debugger */
+
+* {
+  border: 1px solid black;
+}
+
+/*  Header  */
+
+header {
+  height: 24rem;
+  width: auto;
+  background: #dbdbdb;
+  height: 20rem;
+  margin: 8px 2rem;
+  opacity: 0.9;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.header_img_container {
+  background-image: url("../images/soccer_image1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  background-position: 50% 50%;
+  height: 20rem;
+  width: 10rem;
+  order: 20;
+}
+
+.logo {
+  width: auto;
+  max-height: 100px;
+  order: 50;
+  align-self: flex-end;
+}
+
+header h1 {
+  background-color: grey;
+  border: 1px solid black;
+  order: 30;
+}
+
+header h2 {
+  order: 10;
+}
+
+.wrap {
+
+}
+
+nav {
+  height: auto;
+  order: 40;
+}
+
+
+/*  Main (not wrapped in <main>)  */
+
+main {
+}
+
+/*Disable other images*/
+#img2,
+#img3 {
+  display: none;
+}
